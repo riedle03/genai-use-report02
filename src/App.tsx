@@ -136,7 +136,7 @@ const App: React.FC = () => {
                 dataKey="value"
                 label={({ name, percent }) => `${name}: ${(percent * 100).toFixed(1)}%`}
               >
-                {pieChartData.map((entry, index) => (
+                {pieChartData.map((_, index) => (
                   <Cell key={`cell-${index}`} fill={PIE_COLORS[index % PIE_COLORS.length]} />
                 ))}
               </Pie>
