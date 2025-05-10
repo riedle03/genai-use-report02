@@ -1,0 +1,86 @@
+/* App.css - Add any component-specific styles here if Tailwind isn't enough */
+
+/* Example: Custom styles for chart containers if needed */
+.chart-container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  margin-bottom: 2rem; /* Add some space between charts */
+}
+
+/* Styling for recharts text elements to ensure they inherit body font or specific font */
+.recharts-text, .recharts-legend-item-text, .recharts-tooltip-label, .recharts-tooltip-item {
+  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif !important;
+}
+
+/* Ensure responsive charts */
+.recharts-responsive-container {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* Custom legend styling if needed */
+.custom-legend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.custom-legend-item {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+  margin-bottom: 5px;
+  font-size: 0.875rem; /* 14px */
+}
+
+.custom-legend-color-box {
+  width: 12px;
+  height: 12px;
+  margin-right: 5px;
+  border-radius: 2px;
+}
+
+/* Style for the report sections */
+.report-section {
+  @apply mb-12; /* Tailwind class for margin-bottom */
+}
+
+.report-section h2 {
+  @apply text-2xl font-semibold mb-4 pb-2 border-b border-gray-300; /* Tailwind classes */
+}
+
+.report-section h3 {
+  @apply text-xl font-semibold mb-3 mt-6; /* Tailwind classes */
+}
+
+.report-section p, .report-section ul, .report-section blockquote {
+  @apply mb-4 text-gray-700; /* Tailwind classes */
+}
+
+.report-section ul {
+  @apply list-disc list-inside pl-4; /* Tailwind classes */
+}
+
+.report-section blockquote {
+  @apply border-l-4 border-blue-500 pl-4 italic text-gray-600; /* Tailwind classes */
+}
+
+.references ul li {
+  @apply mb-2 text-sm;
+}
+.references a {
+  @apply text-blue-600 hover:text-blue-800 hover:underline;
+}
+
+/* Ensure image is responsive */
+.report-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
